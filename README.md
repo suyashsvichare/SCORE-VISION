@@ -1,41 +1,21 @@
-# IPL Score Predictor
+# SCORE VISION
 
-This Streamlit webapp enables user to predict total runs between teams using current runs and wickets.
+SCORE-VISION
+THIS IS A PROJECT WHERE YOU CAN PREDICT THE SCORE OF IPL TEAM TEAMS BASED ON THE SCORE SCORED IN THE FIRST 5 OVERS RATHER THAN THE TRADITIONAL RUN RATE BASED SYSTEM. IT INCLUDES THE USE OF VARIOUS MACHINE LEARING ALGORITHMS SUCH AS DECISION TREE,RANDOM FOREST, REGRESSION, ETC IT ALSO INVOLVES THE USE OF A WIDE VARIETY OF PYTHON LIBRARIES SUCH AS MATPLOTLIB, SEABORN, NUMPY, PANDAS, ETC. IT USES THE STREAMLIT PLATFORM THAT ALLOWS USER TO INTERACT WITH THE PREDICTION SYSTEM.
 
-**Algorithms used:**
+FOLLOWING ARE THE NECESSARY STEPS TO EXECUTE: (IN ALL THE COMMANDS DON'T INCLUDE "" (QUOTES) EXCEPT FOR PATHS)
 
-* Linear Regression
-* K-Nearest Neighbor Regressor 
-* XGBoost Regressor
-* RandomForest Regressor
-* SVR
-* Decision Tree Regressor
-
-**Hyperparamter Optimization:**
-
-Used optuna for paramter optimization.
-
-**Dataset:**
-
-The dataset comprises of over by over details of matches and runs from 2008 to 2020.
-
-Dataset Used: ipl_data.csv
-
-* mid - match id
-* date - when matches are played
-* venue - place where matches aew played
-* bat_team - batting team
-* bowl_team - bowling team
-* batsman - batsman
-* bowler - bowler
-* runs - runs scored
-* wickets - wickets
-* overs - overs - next 3 are based on this
-* run_last_5 - runs scored in last 5 overs
-* wicket_last_5 - wickets in last 5 overs
-* stricker - batsman playing as main 1
-* non-striker - batsman playing as runner up - not main 0
-* total - total score (target variable)
+INTALLING JUPYTER NOTEBOOK: THIS CAN BE DONE DIRECTLY FROM THE JUPYTER NOTEBOOK WEBPAGE
+OR YOU CAN JUST SIMPLY TYPE INTO THE CMD AS--> pip install notebook
+AFTER INSTALLATION YOU CAN OPEN IT BY TYPING INTO CMD--> jupyter notebook
+THEN YOU WILL HAVE TO DOWNLOAD ALL THESE FILES INTO THE "C" DRIVE INTO A FOLDER WITH NAME "IPLScorePredictor-main"
+LATER INSTALL ANANCONDA INTO THE JUPYTER NOTEBOOK PLATFORM
+NOW IN THE JUPYTER NOTEBOOK UPLOAD ALL THE FILES THAT ARE IN THE "IPLScorePredictor-main" FOLDER (MAINLY "ipl_score_predictor.pkl" AND "ipl_score_predictor.py" AND "ml_model.pkl")
+NOW OPEN "ANACONDA PROMPT" . YOU CAN FIND IT BY TYPING IN THE SEARCH BAR OF YOUR APPLICATIONS.
+IN THIS PROMPT YOU WILL INSTALL THE STREAMLIT WHICH IS AN OPEN SOURCE PYTHON LIBRARY USED FOR BUILDING INTERACTIVE WEB APPS. FOLLOWING ARE THE STEPS: a. IN THE ANACONDA PROMPT TYPE--> pip install streamlit b. THEN CHECK IF IT IS INSTALLED BY TYPING--> streamlit hello
+FINALLY FOR RUNNING THE CODE FIRST YOU NEED TO GO THE THE C DRIVE FOLDER AND COPY THE PATH OF THE FILE WITH NAME "ipl_score_predictor.py".
+THEN GO TO THE "ANACONDA PROMPT" AND TYPE--> streamlit run "path\ipl_score_predictor.py" (HERE instead of path you will have to paste the previously copied path of file)
+AFTER CLICKING ENTER A NEW WINDOW APPEARS WITH THE STREAMLIT PLATFORM SHOWING THE WEB APPLICATON. **AFTER THIS IF AN ERROR OCCURS THEN UNINSTALL STREAMLIT BY--> pip uninstall streamlit AND THEN REINSTALL IT BY--> pip install streamlit **EVEN AFTER THIS THE IS A PICKLE ERROR THEN: a. IN PROMPT TYPE--> pip show scikit-learn AND ENSURE THAT THE VERSION IS 1.2.2 b. IF IT IS OF HIGHER VERSION THEN YOU WILL HAVE TO DOWNGRADE IT BY--> pip install scikit-learn==1.2.2 AFTER THIS REPEAT THE STEP NO.10
 
 **Streamlit App:**
 
